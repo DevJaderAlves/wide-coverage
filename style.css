@@ -1,0 +1,147 @@
+*{
+     font-family: "Poppins", sans-serif;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px 40px;
+    gap: 15px;
+}
+.link-header{
+    font-weight: 400;
+    font-size: 14px;
+    color: #17233D;
+    cursor: pointer;
+    text-decoration: none; 
+}
+.btn-header{
+    width: 120px;
+    padding: 8px 10px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #6FBF44;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px 20px;
+}
+.logo-image{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 550px;
+}
+h1{
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 72px;
+    width: 100%;
+    max-width: 582px;
+    color: #161A49;
+}
+p{
+    width: 100%;
+    max-width: 493px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    color: #4B505A;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.btn-section{
+    font-weight: 500;
+    color: #6FBF44;
+    font-size: 18px;
+    border: none;
+    align-self: flex-start;
+}
+@media screen and (max-width: 900px){
+    .container-principal{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    section{
+        align-items: center;
+        max-width: 90%;
+    }
+
+    h1{
+        font-size: 48px;
+        line-height: 58px;
+        max-width: 100%;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 28px;
+        max-width: 100%;
+    }
+
+    .btn-section{
+        align-self: center;
+    }
+
+    .logo-image{
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    header{
+        justify-content: center;
+        padding: 20px 15px;
+        gap: 12px;
+    }
+
+    .link-header{
+        font-size: 13px;
+    }
+
+    .btn-header{
+        width: 110px;
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    p{
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .btn-section{
+        font-size: 16px;
+    }
+}
